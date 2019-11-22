@@ -2,12 +2,15 @@
   "name": "node-sandbox",
   "version": "1.0.0",
   "description": "Simple Node Sandbox",
-  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 8080"
+    "client": "cd client && npm run serve",
+    "server": "cd server && npm start",
+    "start": "concurrently  \"npm run server\" \"npm run client\""
   },
-  "dependencies": {},
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "concurrently": "4.1.1"
+  },
+  "dependencies": {
+    "axios": "0.19.0"
   }
 }
