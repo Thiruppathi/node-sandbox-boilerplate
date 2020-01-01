@@ -1,4 +1,5 @@
 # vue-boilerplate
+Vue boilerplate for sandbox environment
 
 ## Project setup
 
@@ -27,3 +28,6 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### TODO
+NUXT configuration
